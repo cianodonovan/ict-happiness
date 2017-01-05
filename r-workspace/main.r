@@ -2,7 +2,7 @@
 #This file performs analysis and graphing
 
 ### RUN THE Q SORT
-results <- qmethod(thesorts, nfactors = 2, rotation = "varimax")
+results <- qmethod(thesorts, nfactors = 7, rotation = "varimax")
 
 ### SHOW SOME RESULTS
 summary(results) #SUMMARISING

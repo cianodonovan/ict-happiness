@@ -22,6 +22,7 @@ q.concourse <- import.q.concourse(q.concourse.dir, languages = NULL)
 q.sample <- read.csv("/Users/cianodonovan/Dropbox/Academia/Research\ projects/ICT-Happiness/Analysis/ict-happiness/ICT-happiness-sample/ICT-happiness-concourse/sample.csv",header=T)$handle
 #Build the q set as a matrix
 q.set <- build.q.set(q.concourse, q.sample, q.distribution)
+
 ## IF USING IDS INSTEAD OF HASHES
 #Create the manual lookup table for handles and ids
 manual.ids = matrix(scan("/Users/cianodonovan/Dropbox/Academia/Research\ projects/ICT-Happiness/Analysis/ict-happiness/ICT-happiness-sample/ids.csv", what=character(), skip=0), nrow=31, byrow = TRUE)
